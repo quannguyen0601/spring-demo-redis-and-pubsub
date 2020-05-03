@@ -1,0 +1,19 @@
+GET http://localhost:8080/api/lock/size HTTP/1.1
+
+###
+
+GET http://localhost:8080/api/lock/3 HTTP/1.2
+
+###
+
+POST http://localhost:8080/api/event HTTP/1.2
+Content-Type: application/json
+
+{
+  "sender": "QuanNguyen {{$randomInt 1 10000}}",
+  "receiver": "{{$randomInt 1 20000}}",
+  "content": "Xin Chao VietNam",
+  "type": "NEW"
+}
+
+

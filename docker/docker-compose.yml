@@ -1,0 +1,10 @@
+version: '3.7'
+
+services: 
+    redis:
+        image: redis:6.0.1
+        container_name: redis-learn
+        ports: 
+        - "6379:6379"
+        volumes:
+        - ./my-redis.conf:/usr/local/etc/redis/redis.conf
